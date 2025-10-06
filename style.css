@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #605d5d;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.masked-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?_gl=1*26yczx*_ga*MTU3MTQ4MjE4Mi4xNzU5NjEwNTk5*_ga_8JE65Q40S6*czE3NTk2MTA1OTkkbzEkZzEkdDE3NTk2MTEwNjIkajU3JGwwJGgw'); 
+    background-size: 200%; 
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
